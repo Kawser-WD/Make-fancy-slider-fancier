@@ -4,7 +4,7 @@ const galleryHeader = document.querySelector('.gallery-header');
 const searchBtn = document.getElementById('search-btn');
 const sliderBtn = document.getElementById('create-slider');
 const sliderContainer = document.getElementById('sliders');
-const input = document.getElementById('search').value;
+
 // selected image 
 let sliders = [];
 
@@ -38,6 +38,7 @@ const showImages = (images) => {
 }
 
 const getImages = (query) => {
+  const input = document.getElementById('search').value;
   if(input==""){
    alert('field must not be empty')
   }else{
